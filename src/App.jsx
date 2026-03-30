@@ -19,8 +19,6 @@ import { AuthProvider } from './context/AuthContext'
 
 function App() {
 
-
-
   return (
     <BrowserRouter>
       <AuthProvider>
@@ -34,8 +32,7 @@ function App() {
               <AdminRoute>
                 <AdminLayout />
               </AdminRoute>
-            }
-          >
+            }>
             <Route index element={<DashBoard />} />
             <Route path="usermanager" element={<UserManager />} />
             <Route path="tourmanager" element={<TourManager />} />
